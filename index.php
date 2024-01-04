@@ -5,13 +5,10 @@ $xml = simplexml_load_file(__DIR__ . '/schema.xml');
 $namespaces = $xml->getNamespaces(true);
 $dpi = $namespaces['dpi'];
 
-foreach ($xml->children($dpi) as $childNode) {
-    foreach ($childNode as $bodyNode) {
-        if ($bodyNode->getName() === 'ReportableSeller') { 
-            $bodyNode->addChild('Name', 'Filip');
-            $bodyNode->Name->addAttribute('debug', 'true');
-        }
-    }
+// we could just loop over all $xml->children($dpi) -- see previous commit
+foreach ($xml->children($dpi)->DPIBody->ReportableSeller as $seller) {
+    $seller->addChild('Name', 'Filip');
+    $seller->addChild('Order', 'Lamb Shwarma with extra garlic sauce');
+    $seller->Name->addAttribute('debug', 'true');
 }
-
 var_dump($xml->asXML()); die();
