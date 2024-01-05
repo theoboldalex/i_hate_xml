@@ -1,5 +1,8 @@
 # I H8 XML
 
+## THIS IS PARTICULARLY USEFUL!!
+- [https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-69/](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
 ## References
 - https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-33/33-03-05.pdf
 - https://www.revenue.ie/en/online-services/support/software-developers/documents/aeoi/api-fds-v1.3.pdf
